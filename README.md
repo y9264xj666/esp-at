@@ -22,7 +22,8 @@ The demo is the AT command set based on uart. You can replace the uart driver wi
 # 概述
 libat_core.a 是 AT 命令集的核心部分, 包含默认的 AT 指令集, 具有 AT 命令解析、 执行和回复功能. 在此库中，可以处理 `AT+TEST=?`、 `AT+TEST?`、 `AT+TEST=“abc”` 和 `AT+TEST` 4 种格式的指令集. 可以根据相关 API 自定义命令, 并且还可以定义输入输出介质, 比如 uart, spi, socket, bt 等等. **在使用 ESP-AT 方案前，请仔细阅读 [特别声明](https://docs.espressif.com/projects/esp-at/zh_CN/latest/esp32/disclaimer.html)，并遵循其中的各项条款和注意事项。**
 
-此工程是基于 uart 实现的命令集，如果需要，你可以使用其它驱动程序替换掉 uart 驱动，为了使用新的驱动程序，可能必须做一些必要的代码改动. 另外，如果需要，你可以仿照 `AT+CIUPDATE` 在 `at_custom_cmd` 中添加自定义命令.
+此工程是基于 uart 实现的命令集，如果需要，你可以使用其它驱动程序替换掉 uart 驱动，为了使用新的驱动程序，可能必须做一些必要的代码改动. 
+另外，如果需要，你可以仿照 `AT+CIUPDATE` 在 `at_custom_cmd` 中添加自定义命令.
 
 - 最新版的文档：https://docs.espressif.com/projects/esp-at/ ，该文档是由本仓库 [docs 目录](docs) 构建得到
 - [How_to_clone_project_and_compile_it.rst](docs/zh_CN/Compile_and_Develop/How_to_clone_project_and_compile_it.rst): 如何编译 ESP AT 工程  
